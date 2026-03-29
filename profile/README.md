@@ -1,3 +1,11 @@
+██████╗  █████╗ ██████╗ ████████╗ ██████╗ ███╗   ███╗███████╗
+ ██╔══██╗██╔══██╗██╔══██╗╚══██╔══╝██╔═══██╗████╗ ████║██╔════╝
+ ██████╔╝███████║██║  ██║   ██║   ██║   ██║██╔████╔██║█████╗  
+ ██╔══██╗██╔══██║██║  ██║   ██║   ██║   ██║██║╚██╔╝██║██╔══╝  
+ ██║  ██║██║  ██║██████╔╝   ██║   ╚██████╔╝██║ ╚═╝ ██║███████╗
+ ╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝    ╚═╝    ╚═════╝ ╚═╝     ╚═╝╚══════╝
+      THE DEFINITIVE BLUEPRINT FOR MODERN ENTERPRISE SYSTEMS
+
 # Welcome to the Tome. ⚡📖
 
 RadTome is a specialized software forge focused on **enterprise microservice architecture** and **SaaS acceleration**. We build the "boring" stuff—security, multi-tenancy, and scalability—so you can focus on the "rad" stuff.
