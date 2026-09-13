@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RadTome // Shipped Systems, Developer Tools & Enterprise Architecture</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="RadTome is a software project organization and forge building high-utility developer tooling, GraalVM AOT microservices, Manifest V3 extensions, and Model Context Protocol infrastructure." />
+  <meta name="keywords" content="RadTome, OrgSets, QuickSnipe, MCP Codex, PrettyPrint, GraalVM Native, Spring Boot 3.5, React 19, Model Context Protocol, Chrome Extension MV3, Multi-Tenant SaaS, Stripe Connect" />
+  <meta name="author" content="Rad Tome" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://radtome.github.io/.github/" />
+
+  <!-- OpenGraph / Social Sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://radtome.github.io/.github/" />
+  <meta property="og:site_name" content="RadTome" />
+  <meta property="og:title" content="RadTome // The Definitive Blueprint for Modern Enterprise Systems" />
+  <meta property="og:description" content="Explore verified production software, microservice blueprints, and developer utilities engineered by the RadTome organization." />
+  <meta property="og:image" content="https://radtome.com/social-preview.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="RadTome // Shipped Systems & Engineering Codex" />
+  <meta name="twitter:description" content="High-utility developer tooling, GraalVM native microservices, and AI protocol infrastructure." />
+  <meta name="twitter:image" content="https://radtome.com/social-preview.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- Schema.org JSON-LD for Search Engines -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://radtome.com/#organization",
+        "name": "RadTome",
+        "url": "https://radtome.com",
+        "logo": "https://radtome.github.io/.github/assets/favicon.svg",
+        "description": "Software project organization and forge building high-utility developer tooling and enterprise microservice architectures.",
+        "founder": {
+          "@type": "Person",
+          "name": "Rad Tome",
+          "jobTitle": "Lead Systems Architect & Founder"
+        },
+        "sameAs": [
+          "https://github.com/RadTome",
+          "https://orgsets.com",
+          "https://mcp-codex.com",
+          "https://prettyprint.radtome.com",
+          "https://radtome.github.io/.github/"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://radtome.github.io/.github/#website",
+        "url": "https://radtome.github.io/.github/",
+        "name": "RadTome Project Showcase & Codex",
+        "publisher": { "@id": "https://radtome.com/#organization" }
+      },
+      {
+        "@type": "ItemList",
+        "name": "RadTome Shipped Systems & Live Artifacts",
+        "itemListElement": [
+          {
+            "@type": "SoftwareApplication",
+            "position": 1,
+            "name": "OrgSets.com",
+            "operatingSystem": "Web, Cloud",
+            "applicationCategory": "BusinessApplication",
+            "url": "https://orgsets.com",
+            "description": "Multi-tenant hierarchical organizational management platform with automated Stripe Connect ledger auditing."
+          },
+          {
+            "@type": "SoftwareApplication",
+            "position": 2,
+            "name": "QuickSnipe",
+            "operatingSystem": "Chrome Browser",
+            "applicationCategory": "BrowserExtension",
+            "url": "https://chromewebstore.google.com/detail/quicksnipe-1-click-listin/aignalgmmlmnmofabamcdngdopabgkaa",
+            "description": "Chrome Manifest V3 extension powering multi-channel AI listing optimization for Etsy, Depop, and eBay."
+          },
+          {
+            "@type": "SoftwareApplication",
+            "position": 3,
+            "name": "MCP Codex",
+            "operatingSystem": "Web, Edge",
+            "applicationCategory": "DeveloperApplication",
+            "url": "https://mcp-codex.com",
+            "description": "Definitive directory and implementation blueprints for Model Context Protocol (MCP) servers."
+          },
+          {
+            "@type": "SoftwareApplication",
+            "position": 4,
+            "name": "PrettyPrint",
+            "operatingSystem": "Web Browser",
+            "applicationCategory": "DeveloperApplication",
+            "url": "https://prettyprint.radtome.com",
+            "description": "Zero-telemetry, local-first developer utility for instant recursive JSON and XML formatting."
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- Animated Background Canvas -->
+  <canvas id="tron-canvas" aria-hidden="true"></canvas>
+
+  <!-- CRT Scanline & Screen Texture Overlay -->
+  <div id="crt-overlay" class="crt-overlay" aria-hidden="true">
+    <div class="crt-scanline"></div>
+    <div class="crt-texture"></div>
+    <div class="crt-vignette"></div>
+  </div>
+
+  <div class="app-container">
+    <!-- Header / Navbar -->
+    <header class="site-header" role="banner">
+      <div class="container header-inner">
+        <a href="https://radtome.com" class="brand-logo" title="Visit RadTome Official Forge">
+          <svg class="brand-svg-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2.5" y="2.5" width="59" height="59" rx="14" fill="#0b0b12" stroke="#ffb020" stroke-width="2.5"/>
+            <path d="M17 14 L36 14 C44 14, 49 18, 49 26 C49 32, 45 36, 38 37 L49 50 L40 50 L30.5 38 L25 38 L25 50 L17 50 Z M25 21 L25 31 L35 31 C39 31, 41 29, 41 26 C41 23, 39 21, 35 21 Z" fill="url(#brandGrad)" />
+            <polygon points="50,4 58,12 58,4" fill="#ffb020" opacity="0.85"/>
+            <defs>
+              <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#ffc83b"/>
+                <stop offset="50%" stop-color="#ff8c00"/>
+                <stop offset="100%" stop-color="#ff4500"/>
+              </linearGradient>
+            </defs>
+          </svg>
+          <span class="brand-name">RadTome</span>
+        </a>
+
+        <nav class="site-nav" aria-label="Main Navigation">
+          <ul class="nav-links">
+            <li><a href="#systems" class="nav-link"><span>//</span> Shipped Systems</a></li>
+            <li><a href="#codex" class="nav-link"><span>//</span> Architectural Codex</a></li>
+            <li><a href="#etymology" class="nav-link"><span>//</span> Philosophy</a></li>
+            <li><a href="#backlinks" class="nav-link"><span>//</span> Ecosystem</a></li>
+            <li><a href="https://radtome.com/articles" class="nav-link" target="_blank" rel="noopener"><span>//</span> Articles ↗</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-actions">
+          <button id="toggle-crt-btn" class="btn-icon" title="Toggle CRT Scanline Overlay" aria-label="Toggle CRT Scanlines" aria-pressed="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+              <line x1="8" y1="21" x2="16" y2="21"></line>
+              <line x1="12" y1="17" x2="12" y2="21"></line>
+            </svg>
+          </button>
+          <a href="https://radtome.com" class="btn-primary-link" target="_blank" rel="noopener">
+            <span>radtome.com ↗</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content" role="main">
+      <!-- Hero Section -->
+      <section class="hero-section" aria-labelledby="hero-title">
+        <div class="container">
+          <div class="sys-prompt-badge">
+            <span class="pulse-dot"></span>
+            <span>SYS://RADTOME.ORG &gt; PARENT_FORGE_ACTIVE</span>
+          </div>
+
+          <h1 id="hero-title" class="hero-title">
+            THE DEFINITIVE BLUEPRINT FOR <br />
+            <span class="gradient-text">MODERN ENTERPRISE SYSTEMS</span>
+          </h1>
+
+          <p class="hero-lead">
+            <strong>RadTome</strong> is a specialized software organization engineering 
+            <strong>high-utility developer tooling</strong>, <strong>enterprise microservice architectures</strong>, 
+            and <strong>the SaaS factory of the future</strong>. We build the hardened foundation—AOT compilation, multi-tenancy, compliance, and edge infrastructure—so developers can ship radical products.
+          </p>
+
+          <!-- Interactive Terminal Box -->
+          <div class="terminal-box" aria-label="Live System Terminal">
+            <div class="terminal-bar">
+              <div class="terminal-dots">
+                <span class="terminal-dot dot-red"></span>
+                <span class="terminal-dot dot-yellow"></span>
+                <span class="terminal-dot dot-green"></span>
+              </div>
+              <span class="terminal-title">radtome-telemetry-console v2.4.0</span>
+              <span class="terminal-title" id="telemetry-clock">2026-09-13 UTC</span>
+            </div>
+            <div class="terminal-content">
+              <div class="terminal-line">
+                <span class="t-prompt">guest@radtome:~$</span>
+                <span class="t-cmd">sysinfo --accomplishments --shipped-systems</span>
+              </div>
+              <div class="terminal-line">
+                <span class="t-out">
+                  <span class="t-badge">ACTIVE</span> Verified 4 Production Systems deployed across Chrome Web Store, Cloudflare Edge, and GraalVM Native runtimes.
+                </span>
+              </div>
+              <div class="terminal-line">
+                <span class="t-prompt">guest@radtome:~$</span>
+                <span class="t-cmd">cat philosophy.txt</span>
+              </div>
+              <div class="terminal-line">
+                <span class="t-out">
+                  "Radical knowledge made permanent. High utility. Low maintenance. Zero fluff."
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Telemetry Stats Cards -->
+          <div class="telemetry-bar">
+            <div class="telemetry-card">
+              <div class="telemetry-icon">⚡</div>
+              <div>
+                <div class="telemetry-val">4 SHIPPED</div>
+                <div class="telemetry-lbl">Live Production Artifacts</div>
+              </div>
+            </div>
+            <div class="telemetry-card">
+              <div class="telemetry-icon">☕</div>
+              <div>
+                <div class="telemetry-val">GRAALVM AOT</div>
+                <div class="telemetry-lbl">Spring Boot 3.5 Native</div>
+              </div>
+            </div>
+            <div class="telemetry-card">
+              <div class="telemetry-icon">🛡️</div>
+              <div>
+                <div class="telemetry-val">VERIFIED MV3</div>
+                <div class="telemetry-lbl">Chrome Web Store</div>
+              </div>
+            </div>
+            <div class="telemetry-card">
+              <div class="telemetry-icon">🌐</div>
+              <div>
+                <div class="telemetry-val">EDGE NATIVE</div>
+                <div class="telemetry-lbl">Cloudflare & Fly.io</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Shipped Systems Section -->
+      <section id="systems" class="container" aria-labelledby="systems-title">
+        <div class="section-header">
+          <div class="section-tag">sysinfo --accomplishments --shipped-systems</div>
+          <h2 id="systems-title" class="section-title">SHIPPED PRODUCTION SYSTEMS</h2>
+          <p class="section-sub">
+            Verified enterprise platforms, browser extensions, developer directories, and local-first utilities maintained by RadTome.
+          </p>
+          <div class="section-line"></div>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="filter-container" role="toolbar" aria-label="Project Categories">
+          <button class="filter-btn active" data-filter="all">All Systems [4]</button>
+          <button class="filter-btn" data-filter="saas">SaaS Platforms</button>
+          <button class="filter-btn" data-filter="extension">Browser Extensions</button>
+          <button class="filter-btn" data-filter="devtools">Developer Tools</button>
+          <button class="filter-btn" data-filter="mcp">AI &amp; MCP</button>
+        </div>
+
+        <!-- Project Grid -->
+        <div class="projects-grid">
+          <!-- QuickSnipe -->
+          <article class="project-card" data-category="extension mcp">
+            <div class="card-media-wrapper">
+              <img src="assets/images/projects/quicksnipe.png" alt="QuickSnipe Chrome Web Store Extension Interface" class="card-img" loading="lazy" />
+              <span class="card-status-badge">CHROME STORE</span>
+            </div>
+            <div class="card-body">
+              <div class="card-header-row">
+                <h3 class="project-title">QuickSnipe</h3>
+                <span class="project-version">v1.3.0</span>
+              </div>
+              <div class="project-tagline">AI Listing Studio &amp; Competitor Sniper</div>
+              <p class="project-desc">
+                Specialized multi-channel e-commerce extension for professional resellers on Etsy, Depop, and eBay. Features sales velocity estimation, automated AI listing generation, review flaw mining, and cross-platform profit calculations.
+              </p>
+              <div class="card-metrics">
+                <div class="metric-item">
+                  <span class="metric-label">Platform</span>
+                  <span class="metric-value">Chrome MV3</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-label">Engines</span>
+                  <span class="metric-value">Gemini / GPT-4o / Groq</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-label">Workspace</span>
+                  <span class="metric-value">SidePanel API</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-label">Security</span>
+                  <span class="metric-value">Strict CSP &amp; CSP3</span>
+                </div>
+              </div>
+              <div class="tags-list">
+                <span class="tech-tag">Chrome Web Store</span>
+                <span class="tech-tag">Manifest V3</span>
+                <span class="tech-tag">Gemini AI</span>
+                <span class="tech-tag">Side Panel</span>
+                <span class="tech-tag">ExtensionPay</span>
+              </div>
+              <div class="card-actions">
+                <a href="https://chromewebstore.google.com/detail/quicksnipe-1-click-listin/aignalgmmlmnmofabamcdngdopabgkaa" target="_blank" rel="noopener" class="btn-card-primary">
+                  <span>Chrome Web Store ↗</span>
+                </a>
+                <a href="https://github.com/RadTome/QuickSnipe-support" target="_blank" rel="noopener" class="btn-card-secondary" title="View QuickSnipe Support Repository">
+                  <span>GitHub Support</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- OrgSets.com -->
+          <article class="project-card" data-category="saas">
+            <div class="card-media-wrapper">
+              <img src="assets/images/projects/orgsets.png" alt="OrgSets.com Multi-Tenant SaaS Platform" class="card-img" loading="lazy" />
+              <span class="card-status-badge">PRODUCTION SAAS</span>
+            </div>
+            <div class="card-body">
+              <div class="card-header-row">
+                <h3 class="project-title">OrgSets.com</h3>
+                <span class="project-version">v1.0.0</span>
+              </div>
+              <div class="project-tagline">Professional Hierarchical Multi-Tenant Platform</div>
+              <p class="project-desc">
+                Full-stack multi-tenant platform bridging community organizations and enterprise software. Features hierarchical headquarters/chapters trees, democratic elections, compliance vaults, pulse alerts, and automated Stripe Connect ledger auditing.
+              </p>
+              <div class="card-metrics">
+                <div class="metric-item">
+                  <span class="metric-label">Backend</span>
+                  <span class="metric-value">GraalVM Native / Java 21</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-label">Frontend</span>
+                  <span class="metric-value">React 19 + Tailwind v4</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-label">Billing</span>
+                  <span class="metric-value">Stripe Connect Custom</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-label">Hosting</span>
+                  <span class="metric-value">Fly.io + Cloud Services</span>
+                </div>
+              </div>
+              <div class="tags-list">
+                <span class="tech-tag">Java 21</span>
+                <span class="tech-tag">Spring Boot 3.5</span>
+                <span class="tech-tag">GraalVM Native</span>
+                <span class="tech-tag">React 19</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">Stripe Connect</span>
+              </div>
+              <div class="card-actions">
+                <a href="https://orgsets.com" target="_blank" rel="noopener" class="btn-card-primary">
+                  <span>Visit OrgSets.com ↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- MCP Codex -->
+          <article class="project-card" data-category="mcp devtools">
+            <div class="card-media-wrapper">
+              <img src="assets/images/projects/mcp-codex.png" alt="MCP Codex Model Context Protocol Directory" class="card-img" loading="lazy" />
+              <span class="card-status-badge">LIVE DIRECTORY</span>
+            </div>
+            <div class="card-body">
+              <div class="card-header-row">
+                <h3 class="project-title">MCP Codex</h3>
+                <span class="project-version">v2026.1</span>
+              </div>
+              <div class="project-tagline">Definitive Model Context Protocol Directory</div>
+              <p class="project-desc">
+                High-authority developer directory and step-by-step implementation blueprints for the Model Context Protocol (MCP). Guides developers in connecting Claude, OpenAI Codex, and autonomous agents to databases, Stripe, and enterprise APIs.
+              </p>
+              <div class="card-metrics">
+                <div class="metric-item">
+                  <span class="metric-label">Protocol</span>
+                  <span class="metric-value">Model Context Protocol</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-label">Runtime</span>
+                  <span class="metric-value">Cloudflare Pages Edge</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-label">Transport</span>
+                  <span class="metric-value">JSON-RPC 2.0 (stdio/SSE)</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-label">Agents</span>
+                  <span class="metric-value">Claude, Codex, LangChain</span>
+                </div>
+              </div>
+              <div class="tags-list">
+                <span class="tech-tag">Model Context Protocol</span>
+                <span class="tech-tag">LLM Tooling</span>
+                <span class="tech-tag">Claude MCP</span>
+                <span class="tech-tag">Cloudflare Pages</span>
+              </div>
+              <div class="card-actions">
+                <a href="https://mcp-codex.com" target="_blank" rel="noopener" class="btn-card-primary">
+                  <span>Visit MCP-Codex.com ↗</span>
+                </a>
+                <a href="https://github.com/RadTome/mcp-codex-support" target="_blank" rel="noopener" class="btn-card-secondary" title="View MCP Codex Support Repository">
+                  <span>GitHub Support</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PrettyPrint -->
+          <article class="project-card" data-category="devtools">
+            <div class="card-media-wrapper">
+              <img src="assets/images/projects/prettyprint.png" alt="PrettyPrint Zero Telemetry JSON and XML Formatter" class="card-img" loading="lazy" />
+              <span class="card-status-badge">LIVE DEVTOOL</span>
+            </div>
+            <div class="card-body">
+              <div class="card-header-row">
+                <h3 class="project-title">PrettyPrint</h3>
+                <span class="project-version">v1.0.0</span>
+              </div>
+              <div class="project-tagline">Zero-Config Local-First Developer Formatter</div>
+              <p class="project-desc">
+                Ultra-fast developer utility for instant formatting and syntax highlighting of complex JSON and nested XML structures. Runs 100% in-browser with zero telemetry, guaranteeing proprietary logs and enterprise data never leave client memory.
+              </p>
+              <div class="card-metrics">
+                <div class="metric-item">
+                  <span class="metric-label">Privacy</span>
+                  <span class="metric-value">100% In-Browser</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-label">Telemetry</span>
+                  <span class="metric-value">0 Bytes Transmitted</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-label">Engine</span>
+                  <span class="metric-value">Recursive AST Tokenizer</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-label">Deployment</span>
+                  <span class="metric-value">Cloudflare Pages</span>
+                </div>
+              </div>
+              <div class="tags-list">
+                <span class="tech-tag">Local-First</span>
+                <span class="tech-tag">Zero Telemetry</span>
+                <span class="tech-tag">JSON / XML</span>
+                <span class="tech-tag">Syntax Highlighting</span>
+              </div>
+              <div class="card-actions">
+                <a href="https://prettyprint.radtome.com" target="_blank" rel="noopener" class="btn-card-primary">
+                  <span>Launch PrettyPrint ↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Architectural Codex Section (Deep Backlink Engine) -->
+      <section id="codex" class="codex-section" aria-labelledby="codex-title">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-tag">cat /codex/engineering_dispatches.txt</div>
+            <h2 id="codex-title" class="section-title">ARCHITECTURAL CODEX &amp; DISPATCHES</h2>
+            <p class="section-sub">
+              Deep technical benchmarks, architectural patterns, and production retrospectives authored by RadTome engineering. Published on <a href="https://radtome.com/articles" style="color:var(--primary-amber);text-decoration:underline;" target="_blank" rel="noopener">radtome.com/articles</a>.
+            </p>
+            <div class="section-line"></div>
+          </div>
+
+          <div class="articles-grid">
+            <!-- Article 1 -->
+            <a href="https://radtome.com/articles/graalvm-spring-boot-3-native" target="_blank" rel="noopener" class="article-card">
+              <div class="article-meta">
+                <span class="article-category">BACKEND &amp; GRAALVM</span>
+                <span class="article-read-time">9 min read</span>
+              </div>
+              <h3 class="article-title">High-Throughput Microservices: Java 21 &amp; Spring Boot 3.5 GraalVM Native Images</h3>
+              <p class="article-summary">
+                How Ahead-of-Time (AOT) compilation slashes container memory below 40MB and achieves 15ms cold starts across cloud deployments.
+              </p>
+              <span class="article-link-anchor">Read Blueprint on radtome.com &rarr;</span>
+            </a>
+
+            <!-- Article 2 -->
+            <a href="https://radtome.com/articles/manifest-v3-chrome-extension-architecture" target="_blank" rel="noopener" class="article-card">
+              <div class="article-meta">
+                <span class="article-category">BROWSER EXTENSIONS</span>
+                <span class="article-read-time">11 min read</span>
+              </div>
+              <h3 class="article-title">Building Chrome Extensions Under Manifest V3: Service Workers &amp; SidePanel API</h3>
+              <p class="article-summary">
+                Architecting resilient e-commerce browser tools with ephemeral service workers, chrome.storage.session, and multi-LLM fallback routing.
+              </p>
+              <span class="article-link-anchor">Read Blueprint on radtome.com &rarr;</span>
+            </a>
+
+            <!-- Article 3 -->
+            <a href="https://radtome.com/articles/model-context-protocol-enterprise-guide" target="_blank" rel="noopener" class="article-card">
+              <div class="article-meta">
+                <span class="article-category">AI &amp; PROTOCOLS</span>
+                <span class="article-read-time">12 min read</span>
+              </div>
+              <h3 class="article-title">Model Context Protocol (MCP) in Production: Bridging Autonomous Agents to Enterprise APIs</h3>
+              <p class="article-summary">
+                A breakdown of JSON-RPC 2.0 message structures, stdio vs. SSE transports, security sandboxing, and enterprise tool registration.
+              </p>
+              <span class="article-link-anchor">Read Blueprint on radtome.com &rarr;</span>
+            </a>
+
+            <!-- Article 4 -->
+            <a href="https://radtome.com/articles/local-first-data-processing-prettyprint" target="_blank" rel="noopener" class="article-card">
+              <div class="article-meta">
+                <span class="article-category">LOCAL-FIRST DEVTOOLS</span>
+                <span class="article-read-time">8 min read</span>
+              </div>
+              <h3 class="article-title">Local-First Engineering: Why In-Browser JSON and Recursive XML Formatting Matters</h3>
+              <p class="article-summary">
+                Eliminating enterprise compliance and privacy risks by processing sensitive payloads client-side with zero telemetry.
+              </p>
+              <span class="article-link-anchor">Read Blueprint on radtome.com &rarr;</span>
+            </a>
+
+            <!-- Article 5 -->
+            <a href="https://radtome.com/articles/multi-tenant-saas-hierarchical-nodes" target="_blank" rel="noopener" class="article-card">
+              <div class="article-meta">
+                <span class="article-category">SAAS SYSTEMS</span>
+                <span class="article-read-time">10 min read</span>
+              </div>
+              <h3 class="article-title">Multi-Tenant SaaS Architecture: Designing Hierarchical Node Trees in MongoDB &amp; Redis</h3>
+              <p class="article-summary">
+                Structuring organizations with nested regional chapters, delegated permissions, and O(1) Materialized Path indexing.
+              </p>
+              <span class="article-link-anchor">Read Blueprint on radtome.com &rarr;</span>
+            </a>
+
+            <!-- Article 6 -->
+            <a href="https://radtome.com/articles/stripe-connect-automated-ledger-splitting" target="_blank" rel="noopener" class="article-card">
+              <div class="article-meta">
+                <span class="article-category">FINTECH &amp; BILLING</span>
+                <span class="article-read-time">10 min read</span>
+              </div>
+              <h3 class="article-title">Building Automated Fee-Splitting &amp; Compliance Ledgers with Stripe Connect</h3>
+              <p class="article-summary">
+                Architecture for programmatic dues splitting across multi-tier organizations with immutable double-entry ledger bookkeeping.
+              </p>
+              <span class="article-link-anchor">Read Blueprint on radtome.com &rarr;</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Philosophy & Etymology Section -->
+      <section id="etymology" class="lore-section" aria-labelledby="etymology-title">
+        <div class="container">
+          <div class="lore-box">
+            <h2 id="etymology-title" class="lore-title">// ETYMOLOGY: "IS IT A BOOK OR AN OPINION?"</h2>
+            <p style="color:#cbd5e1; font-size:0.95rem; line-height:1.7;">
+              <strong>RadTome</strong> exists at the intersection of a <strong>Rad Tome</strong> (a definitive manual of power) and software that is simply <strong>Rad To Me</strong> (highly opinionated, quality-driven code).
+            </p>
+
+            <div class="etymology-grid">
+              <div class="etym-item">
+                <div class="etym-word">Rad</div>
+                <div class="etym-def">From <em>Radical</em>. Bold. Unconventional. Unapologetic. High performance without compromise.</div>
+              </div>
+              <div class="etym-item">
+                <div class="etym-word">Tome</div>
+                <div class="etym-def">A large, weighty, scholarly volume. Deep technical knowledge made permanent.</div>
+              </div>
+              <div class="etym-item">
+                <div class="etym-word">Rad To Me</div>
+                <div class="etym-def">Built for the developers who value precision over polish, and raw utility over vanity metrics.</div>
+              </div>
+            </div>
+
+            <div class="quote-callout">
+              "We build the 'boring' stuff—security, multi-tenancy, compliance, and edge infrastructure—so you can ship the 'rad' stuff. We think you're gonna like it here."
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Ecosystem Backlink Hub -->
+      <section id="backlinks" class="backlink-hub" aria-labelledby="hub-title">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-tag">netstat --listening --established-links</div>
+            <h2 id="hub-title" class="section-title">ECOSYSTEM NETWORK &amp; DIRECTORIES</h2>
+            <p class="section-sub">
+              Direct links across the RadTome software forge, live production platforms, and open-source infrastructure.
+            </p>
+            <div class="section-line"></div>
+          </div>
+
+          <div class="hub-grid">
+            <a href="https://radtome.com" target="_blank" rel="noopener" class="hub-card">
+              <div class="hub-domain">radtome.com ↗</div>
+              <div class="hub-desc">Official parent forge, architectural codex, engineering articles, and live telemetry.</div>
+            </a>
+            <a href="https://radtome.com/about" target="_blank" rel="noopener" class="hub-card">
+              <div class="hub-domain">radtome.com/about ↗</div>
+              <div class="hub-desc">Editorial leadership, systems architecture philosophy, and verified E-E-A-T background.</div>
+            </a>
+            <a href="https://orgsets.com" target="_blank" rel="noopener" class="hub-card">
+              <div class="hub-domain">orgsets.com ↗</div>
+              <div class="hub-desc">Hierarchical multi-tenant platform for organizations, voting governance, and Stripe Connect.</div>
+            </a>
+            <a href="https://mcp-codex.com" target="_blank" rel="noopener" class="hub-card">
+              <div class="hub-domain">mcp-codex.com ↗</div>
+              <div class="hub-desc">The definitive Model Context Protocol (MCP) server directory and integration guides.</div>
+            </a>
+            <a href="https://prettyprint.radtome.com" target="_blank" rel="noopener" class="hub-card">
+              <div class="hub-domain">prettyprint.radtome.com ↗</div>
+              <div class="hub-desc">Zero-telemetry client-side JSON and recursive XML developer formatting tool.</div>
+            </a>
+            <a href="https://github.com/RadTome" target="_blank" rel="noopener" class="hub-card">
+              <div class="hub-domain">github.com/RadTome ↗</div>
+              <div class="hub-desc">RadTome GitHub organization housing production support repos and open-source blueprints.</div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Site Footer -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-inner">
+        <div class="footer-top">
+          <div style="display:flex; align-items:center; gap:0.75rem;">
+            <span style="color:var(--primary-amber); font-weight:700;">RadTome Organization</span>
+            <span style="color:var(--border-subtle);">|</span>
+            <span style="color:var(--text-muted); font-size:0.75rem;">Memphis, TN &#128736;&#65039;</span>
+          </div>
+          <ul class="footer-links">
+            <li><a href="https://radtome.com">radtome.com</a></li>
+            <li><a href="https://radtome.com/about">About</a></li>
+            <li><a href="https://radtome.com/articles">Articles</a></li>
+            <li><a href="https://github.com/RadTome">GitHub</a></li>
+            <li><a href="https://radtome.github.io/.github/">GitHub Pages</a></li>
+          </ul>
+        </div>
+        <div class="footer-bottom">
+          <div>
+            &copy; 2026 RadTome. All systems operational. Built for engineers who value precision over polish.
+          </div>
+          <div style="font-size:0.75rem; color:var(--text-muted);">
+            Architectural leadership verified by Lead Systems Architect <strong>Rad Tome</strong>.
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
