@@ -2,7 +2,7 @@
 
 Welcome to the special [RadTome/.github](https://github.com/RadTome/.github) repository.
 
-* 🌐 **Live GitHub Pages Portal:** [radtome.github.io/.github](https://radtome.github.io/.github/)
+* 🌐 **Live GitHub Pages Portal:** [radtome.github.io](https://radtome.github.io/)
 * ⚡ **Official Web Forge:** [radtome.com](https://radtome.com)
 * 📖 **Organization Profile README:** [profile/README.md](profile/README.md)
 

@@ -12,7 +12,7 @@
 
 <p align="center">
   <a href="https://radtome.com"><img src="https://img.shields.io/badge/RADTOME.COM-OFFICIAL_FORGE-ff6b35?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Official Website" /></a>
-  <a href="https://radtome.github.io/.github/"><img src="https://img.shields.io/badge/GITHUB_PAGES-PORTAL-00e5ff?style=for-the-badge&logo=githubpages&logoColor=black" alt="GitHub Pages Portal" /></a>
+  <a href="https://radtome.github.io/"><img src="https://img.shields.io/badge/GITHUB_PAGES-PORTAL-00e5ff?style=for-the-badge&logo=githubpages&logoColor=black" alt="GitHub Pages Portal" /></a>
   <a href="https://orgsets.com"><img src="https://img.shields.io/badge/FLAGSHIP_SAAS-ORGSETS.COM-ffb020?style=for-the-badge&logo=stripe&logoColor=black" alt="OrgSets SaaS" /></a>
   <a href="https://chromewebstore.google.com/detail/quicksnipe-1-click-listin/aignalgmmlmnmofabamcdngdopabgkaa"><img src="https://img.shields.io/badge/CHROME_STORE-QUICKSNIPE_MV3-00ff66?style=for-the-badge&logo=googlechrome&logoColor=black" alt="QuickSnipe Extension" /></a>
 </p>
@@ -34,7 +34,7 @@
 
 We engineer the "boring" stuff—hardened multi-tenancy, zero-telemetry client computation, strict compliance vaults, GraalVM AOT native compilation, and edge infrastructure—so you can ship the "rad" stuff.
 
-> 🌐 **Interactive Portal**: Explore live telemetry, project filters, and backlink codex on our [RadTome GitHub Pages Portal](https://radtome.github.io/.github/) or main site at [radtome.com](https://radtome.com).
+> 🌐 **Interactive Portal**: Explore live telemetry, project filters, and backlink codex on our [RadTome GitHub Pages Portal](https://radtome.github.io/) or main site at [radtome.com](https://radtome.com).
 
 ---
 
@@ -153,7 +153,7 @@ flowchart TD
   <a href="https://radtome.com"><b>radtome.com</b></a> • 
   <a href="https://radtome.com/about"><b>About & Leadership</b></a> • 
   <a href="https://radtome.com/articles"><b>Articles & Codex</b></a> • 
-  <a href="https://radtome.github.io/.github/"><b>GitHub Pages Portal</b></a> • 
+  <a href="https://radtome.github.io/"><b>GitHub Pages Portal</b></a> • 
   <a href="https://github.com/RadTome"><b>GitHub Organization</b></a>
 </p>
 <p align="center">
