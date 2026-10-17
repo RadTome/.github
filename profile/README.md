@@ -57,7 +57,7 @@ RadTome authors and maintains production systems across enterprise cloud backend
 > **High-Performance Chrome Manifest V3 Extension for Multi-Channel Resellers**
 * **Stack:** Chrome Manifest V3 • SidePanel API • Multi-LLM Failover Router (Gemini 2.5 / GPT-4o / Groq) • ExtensionPay
 * **Capabilities:** 1-click direct listing editor form autofill across **7 platforms** (Etsy, Amazon, eBay, Shopify, Poshmark, Depop, Mercari). Includes live profit & margin fee calculators, Amazon 249-byte backend term validator with UTF-8 byte meter, review objection miner, and competitor keyword gap analysis.
-* **Direct Links:** [Chrome Web Store](https://chromewebstore.google.com/detail/quicksnipe-1-click-listin/aignalgmmlmnmofabamcdngdopabgkaa) • [GitHub Support Repo](https://github.com/RadTome/QuickSnipe-support) • [Extension Guide](https://radtome.com/articles/manifest-v3-chrome-extension-architecture)
+* **Direct Links:** [Chrome Web Store](https://chromewebstore.google.com/detail/quicksnipe-1-click-listin/aignalgmmlmnmofabamcdngdopabgkaa) • [GitHub Support Repo](https://github.com/RadTome/QuickSnipe-support) • [Extension Guide](https://radtome.com/articles/chrome-extension-manifest-v3-guide)
 
 ### 3. [Surface Codex](https://github.com/RadTome/surface-codex) — Domain Attack Surface Reconnaissance MCP Server
 > **High-Performance Security Intelligence MCP Server for Autonomous Coding Agents**
@@ -173,9 +173,9 @@ RadTome publishes in-depth engineering analyses, performance benchmarks, and arc
   └────────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
-* ☕ **[High-Throughput Microservices: Java 25 & Spring Boot 4.1 GraalVM Native Images](https://radtome.com/articles/graalvm-spring-boot-3-native)**  
+* ☕ **[High-Throughput Microservices: Java 25 & Spring Boot 4 GraalVM Native Images](https://radtome.com/articles/graalvm-spring-boot-3-native)**  
   *How Ahead-of-Time (AOT) compilation eliminates the JVM warmup penalty, slashes cloud container memory from 512MB to under 40MB, and achieves sub-20ms instant cold starts.*
-* 🧩 **[Building Chrome Extensions Under Manifest V3: Service Workers & SidePanel API](https://radtome.com/articles/manifest-v3-chrome-extension-architecture)**  
+* 🧩 **[Architecting Modern Chrome Extensions in Manifest V3: SidePanels & Multi-LLM Routing](https://radtome.com/articles/chrome-extension-manifest-v3-guide)**  
   *Surviving aggressive service worker teardowns, structuring cross-context message pipelines, and implementing multi-LLM fallback routing with `chrome.storage.session`.*
 * 🛡️ **[Model Context Protocol (MCP) in Production: Bridging Autonomous Agents to Enterprise APIs](https://radtome.com/articles/model-context-protocol-enterprise-guide)**  
   *JSON-RPC 2.0 message flows, stdio vs. SSE transports, security sandboxing, and registering dynamic tools for Claude Desktop, Cursor, and Windsurf.*
@@ -187,6 +187,12 @@ RadTome publishes in-depth engineering analyses, performance benchmarks, and arc
   *Modeling arbitrary deep chapter hierarchies using the Materialized Path pattern for O(1) query indexing and delegated enterprise permissions.*
 * 💳 **[Building Automated Fee-Splitting & Compliance Ledgers with Stripe Connect](https://radtome.com/articles/stripe-connect-automated-ledger-splitting)**  
   *Multi-tier payment distribution, transfer groups, webhook idempotency, and architecting immutable double-entry ledger bookkeeping.*
+* 🔐 **[Securing Browser Extensions: Content Security Policy & Isolation in Manifest V3](https://radtome.com/articles/securing-manifest-v3-browser-extensions)**  
+  *Eliminating remote code execution risks, sandboxing untrusted content scripts, and hardening Chrome extensions against supply chain exploits.*
+* 🚀 **[Modernizing CI/CD: Automated Cloudflare Deployment Pipelines with GitHub Actions v7](https://radtome.com/articles/modern-cicd-github-actions-cloudflare)**  
+  *Building high-velocity deployment pipelines with zero downtime using the latest GitHub Actions runners and Cloudflare Pages.*
+* 🛡️ **[Zero-Telemetry Developer Utilities: The Architecture of Pure Client-Side Web Tools](https://radtome.com/articles/privacy-preserving-developer-tools)**  
+  *Why building high-utility dev tools that run 100% in the browser represents the sustainable future of developer software.*
 
 ---
 
