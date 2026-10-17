@@ -13,8 +13,8 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Java-21_LTS_%7C_GraalVM_Native-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="Java 21" />
-  <img src="https://img.shields.io/badge/Spring_Boot-3.5.x-6DB33F?style=flat-square&logo=springboot&logoColor=white" alt="Spring Boot" />
+  <img src="https://img.shields.io/badge/Java-25_%7C_GraalVM_Native-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="Java 25" />
+  <img src="https://img.shields.io/badge/Spring_Boot-4.1.1-6DB33F?style=flat-square&logo=springboot&logoColor=white" alt="Spring Boot" />
   <img src="https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react&logoColor=black" alt="React 19" />
   <img src="https://img.shields.io/badge/Next.js-16_App_Router-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js 16" />
   <img src="https://img.shields.io/badge/Protocol-MCP_(Model_Context)-7A52FF?style=flat-square&logo=anthropic&logoColor=white" alt="MCP" />
@@ -49,7 +49,7 @@ RadTome authors and maintains production systems across enterprise cloud backend
 
 ### 1. [OrgSets.com](https://orgsets.com) — Enterprise Hierarchical SaaS Platform
 > **Flagship Multi-Tenant Governance, Voting & Automated Ledger Platform**
-* **Stack:** Java 21 LTS • Spring Boot 3.5 • GraalVM AOT Native Images • React 19 • MongoDB Materialized Paths • Stripe Connect
+* **Stack:** Java 25 • Spring Boot 4.1.1 • GraalVM AOT Native Images • React 19 • MongoDB Materialized Paths • Stripe Connect
 * **Capabilities:** Full-stack multi-tenant platform for hierarchical organizational management. Features sub-20ms cold starts, democratic governance voting with cryptographic ballots, automated multi-tier Stripe Connect fee splitting, and immutable compliance auditing.
 * **Direct Links:** [Visit OrgSets.com](https://orgsets.com) • [Read Architecture Whitepaper](https://radtome.com/articles/graalvm-spring-boot-3-native)
 
@@ -61,7 +61,7 @@ RadTome authors and maintains production systems across enterprise cloud backend
 
 ### 3. [Surface Codex](https://github.com/RadTome/surface-codex) — Domain Attack Surface Reconnaissance MCP Server
 > **High-Performance Security Intelligence MCP Server for Autonomous Coding Agents**
-* **Stack:** Model Context Protocol (MCP) • Spring AI • Java 21 • GraalVM Native Image • RDAP / Certificate Transparency
+* **Stack:** Model Context Protocol (MCP) • Spring AI • Java 25 • GraalVM Native Image • RDAP / Certificate Transparency
 * **Capabilities:** Empowers AI agents (Claude Desktop, Cursor, Windsurf, Cline) with 9 autonomous tools to scan domain security postures, discover subdomains via Certificate Transparency logs, detect look-alike typosquatting brand risks, audit SSL/TLS chains, evaluate HTTP security headers, and correlate software with live CVEs.
 * **Direct Links:** [GitHub Repository](https://github.com/RadTome/surface-codex) • [MCP Protocol Specs](https://mcp-codex.com)
 
@@ -89,9 +89,9 @@ RadTome authors and maintains production systems across enterprise cloud backend
 
 | System | Role | Runtime Environment | Core Architecture | Live Status |
 | :--- | :--- | :--- | :--- | :--- |
-| **OrgSets.com** | Enterprise SaaS | GraalVM Native / Cloud Containers | Java 21, Spring Boot 3.5, React 19, MongoDB, Stripe Connect | [Active Production](https://orgsets.com) |
+| **OrgSets.com** | Enterprise SaaS | GraalVM Native / Cloud Containers | Java 25, Spring Boot 4.1.1, React 19, MongoDB, Stripe Connect | [Active Production](https://orgsets.com) |
 | **QuickSnipe** | Browser Extension | Chrome Manifest V3 SidePanel | Gemini 2.5 / GPT-4o / Groq Failover, 7-Platform Scraper | [v1.4.2 Shipped](https://chromewebstore.google.com/detail/quicksnipe-1-click-listin/aignalgmmlmnmofabamcdngdopabgkaa) |
-| **Surface Codex** | Security MCP Server | Native Binary / Stdio & SSE | Spring AI, Java 21 GraalVM Native, RDAP, CT Logs, CVEs | [Open Source](https://github.com/RadTome/surface-codex) |
+| **Surface Codex** | Security MCP Server | Native Binary / Stdio & SSE | Spring AI, Java 25 GraalVM Native, RDAP, CT Logs, CVEs | [Open Source](https://github.com/RadTome/surface-codex) |
 | **MCP Codex** | Protocol Directory | Cloudflare Global Anycast Edge | JSON-RPC 2.0, MCP Specification, Edge Static Cache | [Active Production](https://mcp-codex.com) |
 | **PrettyPrint** | Local-First DevTool | 100% In-Browser Memory (Client AST) | React 19, Zero Telemetry, Recursive Formatter | [Active Production](https://prettyprint.radtome.com) |
 | **preshow.date** | Web & Edge App | Cloudflare Workers (`workerd`) | Next.js 16, React 19, Tailwind 4, Edge SSR OG Cards | [Active Production](https://preshow.date) |
@@ -112,7 +112,7 @@ flowchart TD
 
     subgraph SaaS_Factory ["🏗️ The SaaS Factory"]
         OrgSets["OrgSets.com (Hierarchical SaaS)"]
-        GraalVM["Spring Boot 3.5 + GraalVM Native<br/>(38MB RSS • &lt;18ms Cold Start)"]
+        GraalVM["Spring Boot 4.1 + GraalVM Native<br/>(38MB RSS • &lt;18ms Cold Start)"]
         Ledger["Stripe Connect Custom/Express<br/>(Automated Multi-Tier Ledger Splitting)"]
         Mongo["MongoDB Materialized Paths<br/>(O(1) Ancestor Tree Queries)"]
         OrgSets --> GraalVM
@@ -153,7 +153,7 @@ flowchart TD
 
 | Domain | Core Stack | Architectural Role | Production Benchmark |
 | :--- | :--- | :--- | :--- |
-| **Backend & Native Binaries** | **Java 21 LTS**, Spring Boot 3.5.x, GraalVM Native Image AOT | Zero-warmup microservices, Linux ELF native compilation, virtual threads (Project Loom) | Sub-20ms cold boot, <40MB resident set size (RSS) |
+| **Backend & Native Binaries** | **Java 25**, Spring Boot 4.1.1, GraalVM Native Image AOT | Zero-warmup microservices, Linux ELF native compilation, virtual threads & modern generational ZGC | Sub-20ms cold boot, <40MB resident set size (RSS) |
 | **Agentic AI & Protocols** | **Model Context Protocol (MCP)**, Spring AI, Gemini 2.5, OpenAI GPT-4o, Groq LPU | Autonomous agent tool registry, security reconnaissance, competitor velocity analysis | Deterministic JSON-RPC 2.0 tool execution with sub-second failover |
 | **Frontend & Modern Web** | **React 19**, Next.js 16, Vite, Tailwind CSS 4, Vanilla CSS | Server-rendered edge apps, zero layout shifts, high-density telemetry dashboards | 100/100 Lighthouse Performance, zero hydration mismatch |
 | **Data & Storage** | **MongoDB** (Materialized Paths), Redis, Cloudflare KV & D1 | Hierarchical tree structures, distributed atomic locks, session caching | O(1) recursive permission checks, sub-millisecond lock acquisition |
@@ -173,7 +173,7 @@ RadTome publishes in-depth engineering analyses, performance benchmarks, and arc
   └────────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
-* ☕ **[High-Throughput Microservices: Java 21 & Spring Boot 3.5 GraalVM Native Images](https://radtome.com/articles/graalvm-spring-boot-3-native)**  
+* ☕ **[High-Throughput Microservices: Java 25 & Spring Boot 4.1 GraalVM Native Images](https://radtome.com/articles/graalvm-spring-boot-3-native)**  
   *How Ahead-of-Time (AOT) compilation eliminates the JVM warmup penalty, slashes cloud container memory from 512MB to under 40MB, and achieves sub-20ms instant cold starts.*
 * 🧩 **[Building Chrome Extensions Under Manifest V3: Service Workers & SidePanel API](https://radtome.com/articles/manifest-v3-chrome-extension-architecture)**  
   *Surviving aggressive service worker teardowns, structuring cross-context message pipelines, and implementing multi-LLM fallback routing with `chrome.storage.session`.*

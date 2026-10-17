@@ -18,9 +18,9 @@ This repository houses the organization-wide public profile, global metadata, an
 
 ### 🚀 Shipped Production Systems & Live Artifacts
 
-* **[OrgSets.com](https://orgsets.com)** — Full-stack multi-tenant platform for hierarchical organizational governance, democratic voting with cryptographic ballots, automated multi-tier Stripe Connect fee splitting, and GraalVM AOT native microservices (<20ms cold boot, <40MB RAM).
+* **[OrgSets.com](https://orgsets.com)** — Full-stack multi-tenant platform for hierarchical organizational governance, democratic voting with cryptographic ballots, automated multi-tier Stripe Connect fee splitting, and Java 25 / Spring Boot 4.1.1 GraalVM AOT native microservices (<20ms cold boot, <40MB RAM).
 * **[QuickSnipe](https://chromewebstore.google.com/detail/quicksnipe-1-click-listin/aignalgmmlmnmofabamcdngdopabgkaa)** — High-performance Chrome Manifest V3 SidePanel extension with 1-click form autofill across 7 platforms (Etsy, Amazon FBA, eBay, Shopify, Poshmark, Depop, Mercari), live profit fee calculators, 249-byte Amazon backend term validator, and multi-LLM failover router.
-* **[Surface Codex](https://github.com/RadTome/surface-codex)** — Domain attack surface reconnaissance and security intelligence Model Context Protocol (MCP) server built with Spring AI, Java 21, and GraalVM Native Image for autonomous agents (Claude Desktop, Cursor, Windsurf).
+* **[Surface Codex](https://github.com/RadTome/surface-codex)** — Domain attack surface reconnaissance and security intelligence Model Context Protocol (MCP) server built with Spring AI, Java 25, and GraalVM Native Image for autonomous agents (Claude Desktop, Cursor, Windsurf).
 * **[MCP Codex](https://mcp-codex.com)** — The definitive developer directory and implementation blueprints for Model Context Protocol (MCP) servers.
 * **[PrettyPrint](https://prettyprint.radtome.com)** — Zero-telemetry, local-first in-browser recursive AST formatter for massive JSON & XML payloads. Guaranteed zero server hops and total data privacy.
 * **[preshow.date](https://preshow.date)** — Zero-PII historical culture and pre-show engine built with Next.js 16 (App Router) and deployed on Cloudflare Workers.
